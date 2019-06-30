@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container-fluid {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    /* margin: 0; */
+}
+
+#header {
+    background-color: #ACC0B5;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+#name {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+};
+
+#page-name {
+    font-family: "Cinzel", serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited{
+    color:grey; 
+
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:focus, a:hover{
+    background-color: bisque;
+}
+
+#main-page {
+    background-color: antiquewhite;
+    padding: 5px;
+    height: auto;
+}
+
+#description {
+    text-align: justify;
+    font-family: "Cinzel", serif;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 25px;
+    display: block;
+}
+
+.jumbotron {
+    width: 50%;
+    text-align: center;
+    background-color: #ACC0B5;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 0;
+    margin: 20px 25% 20px 25%;
+}
+
+.display-4 {
+    font-weight: bold;
+}
+
+.carousel {
+    width: auto;
+    margin: 0px 25% 0px 25%;
+}
+
+#footer {
+ 
+    border-top: solid;
+    border-width: 2px;
+    text-align: center;
+    color: black;
+    background-color: #ACC0B5;
+    font-family: 'Cinzel', serif;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    height: 65px;
+    
+}

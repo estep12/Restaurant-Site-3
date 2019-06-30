@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="restaurantStyle.css" type="text/css">
+
+    <script src="https://kit.fontawesome.com/b1b98bee6e.js"></script>
+    <title>Menu</title>
+
+    <style type="text/css">
+        .table {
+            margin-bottom: 0;
+            width: 50%;
+            margin-left: 25%;
+        }
+
+        #menu {
+            background-color: antiquewhite;
+        }
+
+        .col-md {
+            text-align: center;
+        }
+
+        #target {
+            font-weight: bold;
+            font-size: large;
+            text-decoration: underline;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+
+        #page-name {
+            font-family: "Cinzel", serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+        thead tr{
+            background-color: #ACC0B5;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: rgb(247, 247, 242);
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgb(230, 225, 225);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header id="header">
+            <h1 id="name">Lloyd's Cafe</h1>
+            <h2 id="page-name">Menu</h2>
+            <hr style="margin:0;">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu
+                        <i class="fas fa-utensils"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact
+                        <i class="fas fa-address-card"></i>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <div id="menu">
+            <div class="row">
+                <div class="col-md">
+                    <p id="target">Hot-Dog</p>
+                    <p>1/8 lb. all-beef hot dog. | $5</p>
+                </div>
+                <div class="col-md">
+                    <p id="target">Pizza</p>
+                    <p>Hand-tossed using mozzarella cheese and homemade red sauce. Pick any two toppings of sausage, pepperoni,
+                        chicken, bacon or shrimp. | $8 </p>
+                </div>
+                <div class="col-md">
+                    <p id="target">Spagehetti</p>
+                    <p>Topped with our pomodoro sauce, bolognese meat sauce or meatballs. | $8</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <p id="target">Tacos</p>
+                    <p>Three street-tacos. Choices include chicken, steak, shrimp, bean, or pork. Mix and match as you wish.
+                        | $5</p>
+                </div>
+                <div class="col-md">
+                    <p id="target">Burritos</p>
+                    <p>Beef, chicken or bean burrito. Severved with rice and beans. | $6</p>
+                </div>
+                <div class="col-md">
+                    <p id="target">Hamburger</p>
+                    <p>1/4 lb. beef or veggie burger. Topped with lettuce, tomato, onion, cheese and secret sauce. | $7</p>
+                </div>
+            </div>
+
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            Beverages
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Root Beer</th>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bottled Water</th>
+                        <td>$1.25</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lemonade</th>
+                        <td>$1.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Iced Tea</th>
+                        <td>$1.25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer id="footer">
+            <p>2520 Pillsbury Ave S | Minneapolis,MN | 55404
+                <br> 507-440-2572
+            </p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

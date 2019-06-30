@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="restaurantStyle.css" type="text/css">
+    <script src="https://kit.fontawesome.com/b1b98bee6e.js"></script>
+    <script type="text/javascript" src="contactValidation.js"></script>
+    <title>Contact</title>
+
+    <style type="text/css">
+        label {
+            font-weight: bold;
+
+        }
+
+        input[type=text] {
+            width: 25%;
+            height: 30px;
+            text-align: center;
+            margin-left: 10px;
+            margin-top: 10px;
+            border: 1px solid black;
+
+        }
+
+        form, button {
+            margin-left: 20px;
+        }
+
+        button {
+            margin-bottom: 10px;
+        }
+
+        #main {
+            background-color: antiquewhite;
+        }
+
+        #page-name {
+            font-family: "Cinzel", serif;
+            font-weight: bold;
+            text-align: center;
+        };
+    </style>
+</head>
+
+<body>
+
+    <noscript>
+        This site does not support JavaScript.
+    </noscript>
+
+    <div class="container-fluid">
+        <header id="header">
+            <h1 id="name">Lloyd's Cafe</h1>
+            <h2 id="page-name">Contact</h2>
+            <hr style="margin:0;">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu
+                        <i class="fas fa-utensils"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact
+                        <i class="fas fa-address-card"></i>
+                    </a>
+                </li>
+            </ul>
+        </header>
+    
+
+        <div id="main">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="contact-name">Name:</label>
+                    <input class="form-control" type="text" name="contact-name" id="contact-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input class="form-control" type="text" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone Number:</label>
+                    <input class="form-control"type="text" name="number" id="number">
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Reason for Inquiry</label>
+                    <select class="form-control" name="reason" id="reason">
+                            <option value="default" selected>--Select One--</option>
+                            <option value="catering">Catering</option>
+                            <option value="party">Private Party</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                        <label for="info">Additional Information:</label>
+                        <textarea class="form-control" name="info" id="info" rows="3"></textarea>
+                </div>
+                
+                <fieldset id="questionaire">
+                        <label for="questionaire">Have you been to the restaurant before?</label>
+                
+                <div class="form-check" id="questionaire">
+                    <input type="radio" class="form-check-input" name="question" id="choice1" value="yes">
+                    <label for="choice1">Yes</label>
+                </div>
+                <div class="form-check">
+                        <input type="radio" class="form-check-input" name="question" id="choice2" value="no">
+                        <label for="choice2">No</label>
+                </div>
+                </fieldset>
+
+
+                <fieldset id="boxes">
+                    <label for="boxes">Best days to contact you (check all that apply):</label>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="monday" name="days" value="monday">
+                        <label for="monday">Monday</label>
+                    </div>
+                    <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="tuesday" name="days" value="tuesday">
+                            <label for="tuesday">Tuesday</label>
+                    </div>
+                    <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="wednesday" name="days" value="wednesday">
+                            <label for="wednesday">Wednesday</label>
+                    </div>
+                    <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="thursday" name="days" value="thursday">
+                            <label for="thursday">Thursday</label>
+                    </div>
+                    <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="friday" name="days" value="friday">
+                            <label for="friday">Friday</label>
+                    </div>
+                    <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="saturday" name="days" value="saturday">
+                            <label for="saturday">Saturday</label>
+                    </div>
+                    <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="sunday" name="days" value="sunday">
+                            <label for="sunday">Sunday</label>
+                    </div>
+                </fieldset>
+            </form>
+            <hr>
+            <button type="submit" class="btn btn-secondary">Submit Request</button>
+        </div>
+
+
+        <footer id="footer">
+            <p>2520 Pillsbury Ave S | Minneapolis,MN | 55404
+                <br> 507-440-2572
+            </p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
